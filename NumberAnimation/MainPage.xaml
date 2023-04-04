@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:NumberAnimation"             
+             x:Class="NumberAnimation.MainPage">
+
+    <VerticalStackLayout
+            VerticalOptions="Center">
+
+        <controls:AnimatedValue
+                x:Name="lbValue"
+                Format="C0"
+                Duration="1000"
+                HorizontalOptions="Center" />
+
+        <Button
+                x:Name="btChangeValue"
+                Text="Change value"
+                Clicked="ChangeValue_Clicked"
+                HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
